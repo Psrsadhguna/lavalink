@@ -1,0 +1,8 @@
+.git/
+.gitignore
+node_modules/
+*.log
+.DS_Store
+Procfile
+.pytest_cache/
+__pycache__/
