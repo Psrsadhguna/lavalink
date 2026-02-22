@@ -1,0 +1,28 @@
+# Java
+*.class
+*.jar
+*.war
+*.nar
+*.tar.gz
+*.zip
+
+# IDE
+.vscode/
+.idea/
+*.iml
+*.iws
+*.ipr
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Runtime data
+cache/
