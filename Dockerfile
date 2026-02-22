@@ -11,11 +11,8 @@ COPY application.yml .
 # Copy plugins directory
 COPY plugins /app/plugins
 
-# Expose the default Lavalink port
-EXPOSE 2333
+# Expose the port (Railway will set the PORT env variable)
+EXPOSE 5000
 
-# Set the port from environment variable (Railway sets PORT)
-ENV SERVER_PORT=${PORT:-2333}
-
-# Run Lavalink
+# Run Lavalink - Java will read PORT from environment
 CMD ["java", "-jar", "Lavalink.jar"]
