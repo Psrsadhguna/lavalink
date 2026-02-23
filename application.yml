@@ -6,20 +6,21 @@ lavalink:
   server:
     password: "reddybhaigaming"
     sources:
-      youtube: true
+      youtube: false 
       soundcloud: true
       http: true
 
 plugins:
   lavasrc:
-    providers:
-      - "ytsearch:\"%ISRC%\""
+    providers: 
+      # This line tells Spotify to look for the music on YouTube
+      - "ytsearch:\"%ISRC%\"" 
       - "ytsearch:%QUERY%"
     sources:
       spotify: true
     spotify:
-      clientId: ${SPOTIFY_CLIENT_ID}
-      clientSecret: ${SPOTIFY_CLIENT_SECRET}
+      clientId: "3f0943b1fea648d5b4f2ffe0f4f7e04a"
+      clientSecret: "d27daa4025cf4cb992f0e0e8859f90a7"
       countryCode: "IN"
 
 youtube:
@@ -30,4 +31,4 @@ youtube:
   clients:
     - MUSIC
     - WEB
-    - TVHTML5EMBEDDED 
+    - TVHTML5EMBEDDED
